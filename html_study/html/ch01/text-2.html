@@ -1,0 +1,31 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로컬 스토리지(local storage)를 저장하는 함수</title>
+</head>
+
+<body>
+    <h1>로컬 스토리지(local storage)를 저장하는 함수</h1>
+    <pre>
+        function saveTheLocal(){
+            var second = document.getElementById("second");
+            var theValue = second.value;
+            localStroage.setItem(1, theValue);
+            getTheLocal();
+        }
+        <!-- 코드를 원 모양대로 출력 -->
+    </pre>
+    <p>
+        function saveTheLocal(){
+            var second = document.getElementById("second");
+            var theValue = second.value;
+            localStroage.setItem(1, theValue);
+            getTheLocal();
+        }
+        <!-- 텍스트를 1렬로 출력 -->
+    </p>
+</body>
+
+</html>

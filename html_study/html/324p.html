@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father__container{
+            border: 1px solid black;
+            border-bottom: 20px solid black;
+        }
+        .container {
+            width: inherit;
+            height: auto;
+            border: 1px solid gray;
+            padding: 10px 20px;
+        }
+
+        .container__box {
+            padding: 10px 20px;
+            margin: 20px 10px;
+        }
+
+        dt {
+            color: darkorchid;
+            font-weight: 700;
+        }
+
+        .container .box1 {
+            border: 3px solid gray;
+            border-radius: 10px;
+        }
+
+        .container .box2 {
+            border: 3px dotted darkorchid;
+            border-radius: 10px;
+        }
+
+        .container .box3 {
+            border: 3px double green;
+            border-radius: 40px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav__bar {
+            padding: 0px 40px;
+            background: rgb(0, 0, 150, 0.8);
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .nav__bar2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav__bar3 {
+            margin: 30px 10px;
+        }
+
+        .image {
+            width: 22px;
+            height: 22px;
+            background: url(../images/08/bg.png) no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father__container">
+        <div class="nav__bar">
+            <div class="nav__bar1">
+                <h1>애완견 종류</h1>
+            </div>
+            <div class="nav__bar2">
+                <div class="nav__bar3"><a href="#">애완견 종류</a></div>
+                <div class="nav__bar3"><a href="#">입양하기</a></div>
+                <div class="nav__bar3"><a href="#">건강돌보기</a></div>
+                <div class="nav__bar3"><a href="#">더불어살기</a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__box box1">
+                <div class="image"></div><h1>활발한강아지</h1>
+                <dl class="box__content">
+                    <dt>요크셔테리어</dt>
+                    <dd>블라블라</dd>
+                    <dt>말티즈</dt>
+                    <dd>블라블라</dd>
+                    <dt>포메라니언</dt>
+                    <dd>블라블라</dd>
+                    <dt>골든리트리버</dt>
+                    <dd>블라블라</dd>
+                </dl>
+            </div>
+            <div class="container__box box2">
+                <div class="image"></div><h1>온순한강아지</h1>
+                <dl class="box__content">
+                    <dt>쉬즈</dt>
+                    <dd>블라블라</dd>
+                    <dt>퍼그</dt>
+                    <dd>블라블라</dd>
+                    <dt>래브라도 리트리버</dt>
+                    <dd>블라블라</dd>
+            </div>
+            <div class="container__box box3">
+                <div class="image"></div><h1>사납지만 복종적인 강아지</h1>
+                <dl class="box__content">
+                    <dt>미니어쳐 핀셔</dt>
+                    <dd>블라블라</dd>
+                    <dt>푸들</dt>
+                    <dd>블라블라</dd>
+                    <dt>폭스테리어</dt>
+                    <dd>블라블라</dd>
+            </div>
+            <div class="container__footbox">
+                <h1>건강한강아지</h1>
+                <ul>
+                    <li>야</li>
+                    <li>호</li>
+                    <li>빵</li>
+                    <li>맨</li>
+                    <li>솔</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

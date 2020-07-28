@@ -1,0 +1,188 @@
+  
+<TEXT 관련 태그>
+    <h1></h1> 제목 태그, 6까지 있음, 번호가 뒤로 갈수록 크기가 작아진다.
+    <p></p> 단락 태그, 일반적인 텍스트 입력시 사용되는 태그. 안 써도 무방.
+    <br> 개행 태그, 닫는 태그가 없음.
+    <hr> 수평선 태그, 닫는 태그가 없음.
+    <blockquote cite="인용된 사이트 주소 표시"></blockquote> 인용문 태그
+    <pre></pre> 화면에 입력한 그대로 글을 표시해주는 태그.
+    <strong></strong> 텍스트 굵게 표시. 중첩 가능
+    <b></b> 텍스트 굵게 표시. 중첩 가능
+    <em></em> 이텔릭체로 강조 표시
+    <i></i> 이텔릭체로 약하게 표시
+    <q></q> blockquote 태그와 기능이 같음
+    <mark></mark> 형광펜 효과
+    <ruby></ruby> 동아시아 문자 특수표시 시 사용
+    <rt></rt> ruby태그 내에서 주석을 달 때 사용
+    <abbr title="짓고 싶은 이름"></abbr> 약자 표시 태그.
+    <cite></cite> 참고 표시 태그
+    <code></code> 코드 표시 태그
+    <kbd></kbd> 키보드/음성 입력 태그
+    <small></small> 작게 표시
+    <sub></sub> 아래 첨자
+    <sup></sup> 위 첨자
+    <s> 취소선
+    <u> 밑줄
+    
+    
+<LIST 목록 태그>
+    <ol type="1, A, a, I, i" reversed="역순으로 시작하고 싶으면" start="시작하고 싶은 숫자 혹은 알파벳"></ol> 순서 있는 목록 생성 태그
+    <ul type="circle, square, bullets"></ul> 순서 없는 목록 생성 태그
+    <li></li> 목록 내 항목 기록 태그, 개수 만큼 앞에 숫자 혹은 기호 표시가 된다
+    <table aria-describedby="summary" 낭독기를 위한 설명 제공></table> 이 공간이 테이블이라는 것을 알려주는 태그
+    <tr></tr> 테이블의 세로 칸(열) 추가하는 태그
+    <th colspan="가로 병합 개수" rowspan="세로 병합 개수"></th> 테이블의 가로 칸(행, 제목 형태) 추가하는 태그
+    <td colspan="가로 병합 개수" rowspan="세로 병합 개수"></td> 테이블의 가로 칸(행, 내용 형태) 추가하는 태그
+    <caption></caption> 테이블 제목 입력하는 태그
+    <thead></thead> 표의 머리 부분 구간 지정 태그
+    <tbody></tbody> 표의 몸통 부분 구간 지정 태그
+    <tfoot></tfoot> 표의 꼬리 부분 구간 지정 태그
+    <colgroup></colgroup> 세로 줄(행)을 묶어주는 태그
+    <col> 세로 줄 만큼 생성하여 세로 줄 전체를 지정하는 태그
+    
+    
+<DEMENTION - NONSIMENTIC 태그>
+    <div></div> 논시멘틱 태그. 기본적으로 블록 속성을 가짐
+    <span></span> 논시멘틱 태그. 기본적으로 인라인 속성을 가짐
+    <figure></figure> 구간 전체를 한 데 묶어주는 태그 <figurecaption></figurecaption> 태그를 통해 묶인 곳에 제목을 입력 가능
+    <fieldset></fieldset> 여러 구역을 한 데 묶어주는 태그 <legend></legend> 태그를 통해 경계선을 뚫고 표시하는 제목을 입력 가능
+    <main></main> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 전체 컨테이너 구역
+    <header></header> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 머리 구역
+    <nav></nav> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 네비게이션 바 구역
+    <section></section> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 본문 컨테이너 구역
+    <article></article> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 본문 내용 구역
+    <aside></aside> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 사이드 바 구역
+    <footer></footer> HTML 문서의 시멘틱(의미) 부여를 위한 태그, 꼬리 구역
+
+
+<DEMENTION - SIMENTIC 태그>
+    <form method="get, post" action="실행할 프로그램" name="폼 id" target="창표시방식" autocomplete="on, off"></form> 폼 안에 있는 input 태그의 type에 따라 다양한 경고문이 출력됨
+    <label for="참조할 id"></label> 라벨 표시 태그, 참조할 id를 가진 다른 태그와 연결 가능
+    <label><input type="radio, checkbox" name="짓고싶은 이름" value="해당값">내용</label> 라벨로 내용 영역까지 확장 가능
+    <input type="text, date, datetime" placeholder="안내문"> 텍스트 입력 창
+    <input 사용할 수 있는 옵션> hidden, text, search, tel, url, email, password, datetime, datetime-local, date, month, week, time, number, range, color, checkbox, radio, file, submit, image, reset, button
+    <input autofocus required> 반드시 포커스가 이리로 이동, 필수 입력 요소라고 알려주는 옵션
+    <select size="표시할 수" multiple"다중선택여부"><option value=""></option></select> option개수만큼 선택 창 생성
+    <datalist><option value="서버에 들어갈 실제 값">표시할 목록</option></datalist> 셀렉트와 비슷한 선택 창 
+    <textarea name="" id="" cols="30" rows="10"></textarea> 텍스트 입력하는 영역을 생성
+    <progress value="값" min="최소" max="최대" low="하한" high="상한" optimum="평균"></progress>
+    
+    
+<LINK - 참조 태그>
+    <img src="불러올 주소" alt="이미지 오류 시 출력" usemap="#mapname 맵생성 시 맵사용 가능"> 이미지 참조 태그
+    <i src="불러올 주소"></i> 아이콘 참조 태그, 텍스트 스타일 부여 가능
+    <a href="불러올 링크" target="_blank, _parent, _top" download="다운받게 하고싶으면" rel="참조문서 관계표시" type="파일유형 표시" hreflang="링크 문서 언어"></a> 링크 참조 태그
+    <iframe src="불러올 주소" frameborder="경계선" width="너비" height="높이"></iframe> 참조 태그를 공간으로 표시
+    <script src="참조할 js파일 주소"> js 코드 사용 가능 </script> 스크립트 참조 태그
+    <style></style> CSS 스타일 부여 태그
+    <map name="맵이름"><area shape="circle 기본값은 네모" coords="좌표" href="불러올 링크" alt="오류 시"></map> 특정 공간을 좌표로 관리
+    <svg 벡터 이미지 사용 시 Modernizr 사이트에서 해당 기능을 사용할 수 있는 툴이 있는지 확인 요망>
+    <audio src="경로" autoplay controls loop muted preload></audio> 오디오 태그
+    <video src="경로" type="유형/확장자" codecs="코덱" poster="문제시 보여줄 그림"></video> 오디오 태그와 속성이 같음
+    <track kind="종류" src="경로" srclang="언어" label="제목" default> 자막 태그
+    @import url('불러올 주소'); API FONT 불러올 때 쓴다.
+    <script src="불러올 js파일"></script> 자바스크립트 파일 로드용 태그
+    <link rel="stylesheet" type="text/css" href="불러올 css파일"></link> css로드용 태그
+    
+    
+<STYLE - 텍스트 옵션>
+    font: font-size | font-family ; 폰트 일괄 지정, font-style, font-variant, line-height 등을 스타일 요소로 추가할 수 있음
+    font-family: ; 글자 스타일 지정, 중복하여 적는 것으로 대체 스타일 지정 가능
+    text-align: ; 해당 text를 원하는 가로 위치에 정렬, 기준점은 자기 자신
+    vertical-align: ; 텍스트 세로 정렬, table cell, inline, inline-block 요소에만 적용 가능
+    text-justify: auto | none | inter-word | distribute ; 양쪽 정렬을 이용한 텍스트 공간 조절
+    text-overflow: clip | ellipsis ; 공간을 초과하는 텍스트 처리
+    list-style-type: ; 리스트 태그에서 리스트의 모양을 일괄 적용, 기준점은 자기 자신, url();를 통해 이미지 삽입 가능
+    white-space: normal nowrap pre pre-line pre-wrap; 공백 표시 옵션
+    letter-spacing: ; 자간 조절
+    word-spacing: ; 단어사이 공백 조절
+    direction: ltr rtl; 좌에서 우, 우에서 좌 글자 방향 조정
+    text-indent: ; 들여쓰기
+    text-shadow: 수평 | 수직 | 흐림 | 번짐 | 색상 ; 글자 그림자
+    line-height: ; 줄 간격, 컨테이너에서 글자 세로 위치 조정할 때도 사용
+    font-weight: ; 글자 굵기 설정
+    text-transform: none | capitalize | uppercase | lowercase | initial | inherit ; 입력된 문자 대소문자 변환
+    
+    
+<STYLE - 공간 옵션>
+    background: ; 배경색 지정, rgb값으로 줄 경우 투명도 조절 가능
+    width: ; 너비
+    height: ; 높이
+    min-width: ; 최소 너비
+    min-height: ; 최소 높이
+    float: left | right ; 해당 element를 원하는 위치에 정렬, 기준점은 부모 태그
+    clear: both | all ; float 속성 해제
+    position: static | absolute | relative | fixed ; 해당 공간의 포지션 요소 지시
+    left | right | top | bottom: ; position을 준 요소의 구체적인 위치 지시
+    z-index: ; 요소의 표시 순서 지시
+    display: ; 공간 지정, inline, block, inline-block, block-inline, flex
+    flex-direction: column | row | reverse-column | reverse-row ; 해당 flex 요소의 정렬 방향 지시
+    justify-content: center | space-between | space-around ; flex 안쪽 요소의 가로축 정렬 방식 지시
+    align-content: center | space-between | space-around ; flex 안쪽 요소의 세로축 정렬 방식 지시, wrap 옵션을 통해 flex 요소가 여러 줄이 됐을 때 적용 가능
+    align-items: flex-start | center | flex-end ; flex 안쪽 요소의 세로축 정렬 방식 지시
+    flex-wrap: nowrap | wrap | wrap-reverse ; flex 요소의 float화, 자신을 감싼 플렉스 박스 공간을 넘길 것인지 다음 줄로 내려보낼 것인지를 결정
+    flex-flow: derection | wrap ; flex 요소의 direction과 wrap을 동시에 지정
+    flex: flex-grow | flex-shrink | flex-basis ; flex 요소의 크기를 한 번에 지정
+    order: n ; flex 요소의 표시 순서를 n번째로 지시
+    visibility: ; 가시화 여부 hidden
+    backface-visibility: visible | hidden ; element 뒷면의 가시화 여부 지시
+    border-style: ; 경계선 스타일 지정
+    border-width: ; 경계선 굵기 지정
+    border-color: ; 경계선 색상 지정
+    border: 두께 | 색상 | 스타일 ;
+    border-radius: 가로 크기 | 세로 크기 ;
+    overflow: auto | visible | hidden | scroll ; 부모 공간을 초과하는 자식 공간 처리
+    box-shadow: 수평 | 수직 | 흐림 | 번짐 | 색상 ; 공간 그림자
+    drop-shadow: 수평 | 수직 | 흐림 | 번짐 | 색상 ; 요소 그림자
+    box-sizing: content-box | border-box ; 박스 사이즈를 어디를 기준삼을지 결정
+    perspective: ; 원근감 조성 효과를 주는 거리감 부여
+    transform: 줄 속성; 모양 변하게 하는 스타일 부여
+    transform-style: ; 미리 지정된 트랜스폼 프리셋 스타일 부여
+    transform: translate(x, y), translateX(x), translateY(y), scale(x, y), scaleX(x), scaleY(y), rotate(n deg), skewX(x), skewY(y) 2차원 변형 옵션
+    transform: matrix(n [,n]), translate3d(x, y, z), translateZ(z), scale3d(x, y, z), scaleZ(z), rotate3d(x, y, z), rotateX(n deg), rotateY(n deg), rotateZ(n deg) 3차원 변형 옵션
+    transition-property: all | element; 적용 범위 지정
+    transition-duration: ; 지속 시간
+    transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out ; 속도 곡선 지정
+    transition-delay: ; 지연 시간
+    transition: property | duration | function | delay; 트랜지션 한 번에 설정
+    animation-name: ; 애니메이션 이름 지정
+    animation-duration: ; 애니메이션 지속 시간 지정
+    animation-direction: normal | alternative ; 애니메이션 표시 속성 지정
+    animation-iteration-count: ; 애니메이션 반복 횟수 지정
+    animation-timing-function: linear | ease | ease-in | ease-out | ease-in-out ; 애니메이션 속도 곡선 지정
+    animation: animationName | duration | function | delay | count | direction ; 애니메이션 한 번에 설정
+    @keyframes animationName { from {} to {} } 애니메이션 스타일 지정
+    @media screen | all and (min | max-width: n px) element { CSS style } 화면이 최소/최대 너비일 때 element에 CSS 스타일 적용
+
+    
+<STYLE - 가상선택자>
+    element::first-letter{} 문단의 첫글자에 스타일 적용
+    element::first-line{} 문단의 첫줄에 스타일 적용
+    element:link{} 방문하지 않은 링크
+    element:visited{} 방문한 링크
+    element:hover{} On Mouse 상태일 때의 element
+    element:active{} On Click 상태일 때의 element
+    element:focus{} 웹 요소에 초점이 맞춰졌을 때의 element
+    element:enabled{} element가 사용 가능한 상태일 때
+    element:disabled{} element가 사용 불가능한 상태일 때
+    element:checked{} radio/checkbox 선택 시 element
+    element:root{} 문서 전체에 적용
+    element:nth-child(n | odd | even){} 해당 element의 정방향 n번째 요소
+    element:nth-last-child(n){} 해당 element의 역방향 n번째 요소
+    element:first-child{} 해당 element의 첫 번째 자식
+    element:last-child{} 해당 element의 마지막 자식
+    element:first-of-type{} 해당 element의 첫 번째 element
+    element:last-of-type{} 해당 element의 마지막 element
+    element:only-child{} 해당 element의 유일한 자식
+    element:only-of-type{} 해당 element의 유일한 element
+    element:target{} href 앵커 목적지에 해당하는 element
+    element:not(condition){} condition에 해당하지 않는 모든 element
+    element::after | before{} 특정 element의 앞, 뒷부분에 스타일 적용
+    element[condition = ~= |= ^= $= *=]{} condition이 값에 일치할 때 해당 element에 스타일 부여
+
+    
+<STYLE - 직접선택자>
+    element element{} 하위 선택자, 지정한 모든 하위 요소에 스타일 적용
+    element>element{} 자식 선택자, 지정한 자식 요소에만 스타일 적용
+    element+element{} 인접 형제 선택자, 가장 가까운 형제 요소 하나에 스타일 적용
+    element~element{} 형제 선택자, 가장 가까운 형제 요소 모두에 스타일 적용

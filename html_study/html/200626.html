@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li label {
+            float: left;
+            text-align: right;
+            width: 120px;
+            padding-right: 10px;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        #submit {
+            float: left;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- min, max, step attribute -->
+    <fieldset>
+        <legend>Text Book Order</legend>
+        <ul>
+            <li>
+                <label for="">Text Book</label>
+                <input type="text" id="book">
+            </li>
+            <li>
+                <label for="">Worksheet</label>
+                <input type="text" id="sheet">
+            </li>
+            <li>
+                <label for="">Group Order</label>
+                <input type="number" id="order" value="10" min="10" max="100" step="10">
+            </li>
+        </ul>
+    </fieldset>
+    <!-- min, max, step attribute -->
+
+    <!-- size, minlength, maxlength -->
+    <h1>Welcome for sign in</h1>
+    <form action="" class="form2">
+        <ul class="ul2">
+            <li class="ul2__li">
+                <label for="">ID</label>
+                <input type="text" id="id" minlength="4" maxlength="15">
+            </li>
+            <li class="ul2__li">
+                <label for="">Email</label>
+                <input type="text" id="email">
+            </li>
+            <li class="ul2__li">
+                <label for="">Password</label>
+                <input type="text" id="password">
+            </li>
+            <li class="ul2__li">
+                <label for="">Confirm</label>
+                <input type="text" id="confirm">
+            </li>
+            <li class="ul2__li">
+                <input type="submit" value="sign in" id="submit">
+            </li>
+        </ul>
+    </form>
+    <!-- size, minlength, maxlength -->
+
+    <!-- select, optgroup, option -->
+    <br>
+    <h1>Apply for Summer Vacation Class</h1>
+    <fieldset>
+        <legend>Applier</legend>
+        <ul>
+            <li>
+                <label for="">Name</label><input type="text" id="name">
+            </li>
+            <li>
+                <label for="">IDNumber</label><input type="text">
+            </li>
+            <li>
+                <label for="">Major</label>
+                <select id="">
+                    <optgroup label="Engineering">
+                        <option value="">Architecture</option>
+                        <option value="">Computer Engineering</option>
+                        <option value="">Machine Engineering</option>
+                        <option value="">Industry Engineering</option>
+                        <option value="">Electronic Engineering</option>
+                        <option value="">Chemical Engineering</option>
+                    </optgroup>
+                    <optgroup label="Humanity">
+                        <option value="">Literecture</option>
+                        <option value="">Society</option>
+                        <option value="">Philosophy</option>
+                    </optgroup>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+    <!-- select, optgroup, option -->
+
+    <!-- datalist, option -->
+    <fieldset>
+        <legend>Select your Classes</legend>
+        <ul>
+            <li>
+                <label for="">My Favorite</label>
+                <input type="text" id="favorite" list="choices">
+                <datalist id="choices">
+                    <option label="Grammer" value="Grammer"></option>
+                    <option label="Vocabulary" value="Vocabulary"></option>
+                    <option label="Speaking" value="Speaking"></option>
+                    <option label="Listening" value="Listening"></option>
+                    <option label="Article" value="Article"></option>
+                </datalist>
+            </li>
+        </ul>
+    </fieldset>
+    <!-- datalist, option -->
+
+</body>
+
+</html>

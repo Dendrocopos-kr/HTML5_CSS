@@ -1,0 +1,42 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table example</title>
+    <style>
+        table {
+            
+            border: 1px solid black;
+        }
+        th {
+            width: 10%;
+            height: 10%;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table>tr>th{이름}+td+th{연락처}+td^tr>th{주소}+td[colspan="3"]^tr>th{자기소개}+td[colspan="3"] -->
+    <table>
+        <tr>
+            <th>이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

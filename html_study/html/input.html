@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li label {
+            float: left;
+            text-align: right;
+            width: 120px;
+            padding-right: 10px;
+        }
+        li{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <li><input type="checkbox" value="grm">문법</li>
+    <li><input type="checkbox" value="wr">작문</li>
+    <li><input type="checkbox" value="rd">독해</li> -->
+
+    <!-- <h3>회원 가입</h3>
+    <form action="">
+        <fieldset>
+            <legend>필수 정보</legend>
+            <label for="">이름 : <input type="text"></label>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <label for="">생일 : <input type="date" placeholder="연도-월-일"></label>
+        </fieldset>
+    </form> -->
+
+    <!-- <h3>로그인 폼</h3>
+    <fieldset>
+        <label for="user__id">아이디 : </label>
+        <input type="text" id="user__id">
+        <lebel for="user__pw">패스워드 : </lebel>
+        <input type="password">
+        <input type="submit" value="전송">
+    </fieldset> -->
+
+    <!-- <form action="">
+        <fieldset>
+            <legend>다양한 타입속성</legend>
+            <input type="text">
+            <input type="submit" value="전송">
+
+            <label for="url">url 입력 : </label>
+            <input type="url" id="url">
+
+            <label for="email">email 입력 : </label>
+            <input type="email" id="email">
+        </fieldset>
+    </form> -->
+
+    <h1>회원가입</h1>
+    <form action="">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul type="none">
+                <li>
+                    <label for="user__id">아이디</label>
+                    <input id="user__id" type="text">
+                </li>
+                <li>
+                    <label for="user__pw">비밀번호</label>
+                    <input id="user__pw" type="password">
+                </li>
+                <li>
+                    <label for="user__pwc">비밀번호 확인</label>
+                    <input id="user__pwc" type="password">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul type="none">
+                <li>
+                    <label for="user__name">이름</label>
+                    <input id="user__name" type="text">
+                </li>
+                <li>
+                    <label for="user__email">메일주소</label>
+                    <input id="user__email" type="email">
+                </li>
+                <li>
+                    <label for="user__tel">연락처</label>
+                    <input id="user__tel" type="tel">
+                </li>
+                <li>
+                    <label for="user__url">블로그/홈페이지</label>
+                    <input id="user__url" type="url">
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+
+</html>

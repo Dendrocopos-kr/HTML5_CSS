@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            border: 2px solid gray;
+            padding: 0px 3px;
+        }
+        .container__image img{
+            width: 600px;
+        }
+        .container__blackbox{
+            background-color: black;
+            color: white;
+            font: bold;
+            padding-left: 10px;
+        }
+        .boxes{
+            padding: 25px 3px;
+            border: 2px solid burlywood;
+            width: 600px;
+            height: 150px;
+            text-align: center;
+        }
+        .boxes .boxes__title{
+            line-height: 40px;
+            color: red;
+            font-size: 20px;
+            font-style: bold;
+        }
+        .boxes .boxes__content{
+            line-height: 40px;
+        }
+        h6, h3{
+            margin: 5px;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__image">
+            <img src="../images/06/top.jpg" alt="">
+        </div>
+        <div class="container__blackbox">
+            확인하세요
+        </div>
+    </div>
+    <div class="boxes">
+        <span class="boxes__title">주문 및 배송</span>
+        <span class="boxes__content"><h3><span class="blue">오후 2시 이전</span> 주문건은 당일 발송합니다<br>2시 이후 주문건은 다음날 발송합니다(주말 제외)</h3></span>
+    </div>
+    <div class="boxes">
+        <span class="boxes__title">교환 및 환불</span>
+        <span class="boxes__content"><h3>에헤라디야 <span class="blue">100% 환불이다</span><br>연을 날려보자</h3></span>
+    </div>
+    <div class="boxes">
+        <span class="boxes__title">고객센터</span>
+        <span class="boxes__content"><h3 class="blue">000-0000<br></h3><span class="boxes__small">상담시간 : 오전 9시~ 오후6시(토/일, 공휴일 휴무)</span></span>
+    </div>
+</body>
+</html>
